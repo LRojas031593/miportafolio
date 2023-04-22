@@ -146,43 +146,53 @@ img {
 /*********************************************/
 @media (max-width: 768px) {
   .navbar {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    text-align: center;
   }
   
   .navbar .logo {
-  float: none;
-  padding-top: 10px;
-  margin-bottom: 20px;
+    float: none;
+    padding-top: 10px;
+    margin-bottom: 20px;
   }
   
   .navbar ul {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
   }
   
   .navbar ul li {
-  float: none;
-  margin-bottom: 10px;
+    float: none;
+    margin-bottom: 10px;
   }
   
   .navbar ul li a {
-  display: block;
-  padding: 10px;
-  text-align: center;
+    display: block;
+    padding: 10px;
+    text-align: center;
   }
   
   .navbar ul li a:hover,
   .navbar ul li a.current {
-  background: none;
-  color: var(--primary-color);
+    background: none;
+    color: var(--primary-color);
   }
+
+
+  
+  .navbar ul li a:hover,
+  .navbar ul li a.current {
+    background: none;
+    color: var(--primary-color);
   }
+}
+
 
 /* Button */
 
