@@ -185,6 +185,25 @@ img {
 }
 
 /*********************************************/
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+  /* Estilos para el hr con clase "mobile-hr" */
+  .mobile-hr {
+    display: block; /* mostrar en dispositivos móviles */
+    margin: 20px auto; /* ajustar margen */
+    width: 100%; /* ajustar ancho */
+    border: 1px solid var(--secondary-color);
+  }
+}
+
+/* Estilos para pantallas más grandes */
+@media only screen and (min-width: 601px) {
+  /* Ocultar hr con clase "mobile-hr" */
+  .mobile-hr {
+    display: none; /* ocultar en pantallas más grandes */
+  }
+}
+
 @media (max-width: 768px) {
   .navbar {
     display: flex;
