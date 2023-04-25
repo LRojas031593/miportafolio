@@ -144,6 +144,26 @@ img {
   color:var(--primary-color)
 }
 /*********************************************/
+@media only screen and (max-width: 768px) {
+  .banner-header {
+    height: auto;
+    min-height: 300px;
+  }
+  
+  .banner-header-text {
+    width: 90%;
+    padding-top: 30px;
+  }
+  
+  .banner-title {
+    font-size: 2em;
+    padding-bottom: 10px;
+  }
+  
+  .banner-header p {
+    font-size: 1em;
+  }
+}
 @media (max-width: 768px) {
   .navbar {
     display: flex;
@@ -191,6 +211,22 @@ img {
     background: none;
     color: var(--primary-color);
   }
+}
+
+/*video*/
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 
