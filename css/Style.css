@@ -87,7 +87,7 @@ hr {
 
 /* Banner Home*/
 .banner-header {
-  height: 60vh;
+  height: 50vh;
   width: 100%;
   overflow: hidden;
   background: var(--main-color); 
@@ -119,6 +119,7 @@ img {
   color:var(--primary-color)
 }
 
+
 /* Agregue los siguientes estilos para dispositivos móviles */
 
 @media only screen and (max-width: 768px) {
@@ -143,9 +144,6 @@ img {
 }
 
 
-/* General hero */
-
-/*********************************************/
 /* Estilos para dispositivos móviles */
 @media only screen and (max-width: 600px) {
 
@@ -221,25 +219,31 @@ img {
 }
 
 /*video*/
-.video-container {
-  position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
-  overflow: hidden;
-}
+@media only screen and (max-width: 767px) {
+  .video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* relación de aspecto 16:9 */
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+  }
 
-.video-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  .video-container iframe,
+  .video-container object,
+  .video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 }
-
 
 /* Button */
 
 .btn {
+  
   padding: 10px 10px;
   background-color: var(--primary-color);
   border: none;
@@ -253,6 +257,8 @@ img {
   background-color: var(--secondary-color);
   box-shadow: none;
 }
+/****/
+
 
 /* Portfolio */
 .portfolio {
