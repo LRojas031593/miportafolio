@@ -87,7 +87,7 @@ hr {
 
 /* Banner Home*/
 .banner-header {
-  height: 50vh;
+  height: 60vh;
   width: 100%;
   overflow: hidden;
   background: var(--main-color); 
@@ -142,7 +142,66 @@ img {
     font-size: 1em;
   }
 }
+/****Coontact*****/
 
+
+.banner-headerA {
+  height: 30vh;
+  width: 100%;
+  overflow: hidden;
+  background: var(--main-color); 
+  background: linear-gradient(rgba(29, 38, 113, 0.6), rgba(29, 38, 113, 0.6)), url("../img/developer.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+img {
+  object-fit: cover;
+}
+
+.banner-headerA-text {
+  height: 100%;
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  display: grid;
+  place-content: center;
+}
+
+.banner-titleA {
+  font-size: 3em;
+  padding-bottom: 20px;
+}
+
+.banner-titleA span {
+  color:var(--primary-color)
+}
+
+
+/* Agregue los siguientes estilos para dispositivos móviles */
+
+@media only screen and (max-width: 768px) {
+  .banner-headerA {
+    height: auto;
+    min-height: 150px;
+  }
+  
+  .banner-headerA-text {
+    width: 90%;
+    padding-top: 30px;
+  }
+  
+  .banner-titleA {
+    font-size: 2em;
+    padding-bottom: 10px;
+  }
+  
+  .banner-headerA p {
+    font-size: 1em;
+  }
+}
+/*****************************/
 
 /* Estilos para dispositivos móviles */
 @media only screen and (max-width: 600px) {
