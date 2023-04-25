@@ -98,7 +98,7 @@ hr {
 }
 
 img {
- object-fit: cover;
+  object-fit: cover;
 }
 
 .banner-header-text {
@@ -118,6 +118,30 @@ img {
 .banner-title span {
   color:var(--primary-color)
 }
+
+/* Agregue los siguientes estilos para dispositivos móviles */
+
+@media only screen and (max-width: 768px) {
+  .banner-header {
+    height: auto;
+    min-height: 300px;
+  }
+  
+  .banner-header-text {
+    width: 90%;
+    padding-top: 30px;
+  }
+  
+  .banner-title {
+    font-size: 2em;
+    padding-bottom: 10px;
+  }
+  
+  .banner-header p {
+    font-size: 1em;
+  }
+}
+
 
 /* General hero */
 .hero {
@@ -144,26 +168,6 @@ img {
   color:var(--primary-color)
 }
 /*********************************************/
-@media only screen and (max-width: 768px) {
-  .banner-header {
-    height: auto;
-    min-height: 300px;
-  }
-  
-  .banner-header-text {
-    width: 90%;
-    padding-top: 30px;
-  }
-  
-  .banner-title {
-    font-size: 2em;
-    padding-bottom: 10px;
-  }
-  
-  .banner-header p {
-    font-size: 1em;
-  }
-}
 @media (max-width: 768px) {
   .navbar {
     display: flex;
