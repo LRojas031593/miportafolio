@@ -310,6 +310,7 @@ img {
   border-radius: 20px;
   cursor: pointer;
   box-shadow: 1px 3px 11px -5px rgba(102, 221, 200, .69);
+  color: #fff;
 }
 
 .btn:hover {
@@ -374,6 +375,45 @@ img {
   border: 2px solid var(--primary-color);
 }
 
+/*****/
+@media only screen and (max-width: 768px) {
+  .portfolio {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  
+  .portfolio ul {
+    float: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .portfolio ul li {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .portfolio ul li:last-child {
+    margin-right: 0;
+  }
+  
+  .box {
+    float: none;
+    width: 100%;
+  }
+  
+  .box img {
+    border: 1px solid var(--secondary-color);
+    border-radius: 10px;
+  }
+  
+  .box a:hover img {
+    transform: none;
+    border: 1px solid var(--secondary-color);
+  }
+}
 /* About Me */
 .about {
   text-align: center;
@@ -572,6 +612,77 @@ img {
 
 .single-project .description p {
   text-align: justify;
+}
+/****/
+@media only screen and (max-width: 768px) {
+  .single-project {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  
+  .box-portfolio {
+    float: none;
+    width: 100%;
+    padding: 10px;
+  }
+  
+  .single-project .single-project-btn .prev {
+    float: none;
+    margin-bottom: 20px;
+  }
+  
+  .single-project .single-project-btn .next {
+    float: none;
+  }
+}
+/****/
+
+/*************P1**************/
+.hero {
+  
+  padding: 60px 0;
+  text-align: center;
+}
+
+.hero .hero-header-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero .hero-header-text .hero-title {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero .hero-header-text .hero-title span {
+  color: #FFA500;
+}
+
+.hero .hero-header-text .btn {
+ 
+
+
+  padding: 10px 10px;
+  background-color: var(--primary-color);
+  border: none;
+  margin-top: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 1px 3px 11px -5px rgba(102, 221, 200, .69);
+  color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+  .hero .hero-header-text .hero-title {
+    font-size: 2rem;
+  }
+  
+  .hero .hero-header-text .btn {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
 }
 
 /* Footer */
