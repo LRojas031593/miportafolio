@@ -96,6 +96,11 @@ hr {
   background-position: center;
   background-size: cover;
 }
+.hero {
+  background: linear-gradient(rgba(29, 38, 113, 0.6), rgba(29, 38, 113, 0.6)), url("../img/developer.png");
+  background-size: cover;
+  background-position: center center;
+}
 
 img {
   object-fit: cover;
