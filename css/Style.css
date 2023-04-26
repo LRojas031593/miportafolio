@@ -319,7 +319,7 @@ img {
 }
 
 .btn:hover {
-  background-color: var(--secondary-color);
+
   box-shadow: none;
 }
 /****/
@@ -637,6 +637,7 @@ img {
   }
   
   .single-project .single-project-btn .next {
+
     float: none;
   }
 }
@@ -666,9 +667,6 @@ img {
 }
 
 .hero .hero-header-text .btn {
- 
-
-
   padding: 10px 10px;
   background-color: var(--primary-color);
   border: none;
@@ -689,7 +687,11 @@ img {
     padding: 8px 16px;
   }
 }
-
+@media (max-width: 767px) {
+  .single-project-btn {
+    text-align: center;
+  }
+}
 /* Footer */
 .main-footer {
   height: 80px;
