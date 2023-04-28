@@ -73,13 +73,20 @@
             <textarea name="message" placeholder="Deja tu mensaje..."></textarea>
           </div>
           <div class="single-form">
-            <input type="text" name="_subject" placeholder="Asunto">
-          </div>
-          <div class="single-form">
             <button class="btn">Enviar</button>
           </div>
         </div>
       </form>
+      <script>
+        document.querySelector("#formulario").addEventListener("submit", function(event) {
+          event.preventDefault();
+          document.querySelector("#nombre").value = "";
+          document.querySelector("#email").value = "";
+          document.querySelector("#mensaje").value = "";
+          this.submit();
+        });
+      </script>
+      
       
     </div>
   </section>
