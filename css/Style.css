@@ -510,7 +510,7 @@ img {
 
 .contact-form input:focus, .contact-form textarea:focus {
   background-color: var(--secondary-color);
-  color: var(--main-color);
+  color: black;
 }
 
 .contact-form textarea {
@@ -717,7 +717,7 @@ img {
 }
 
 .main-footer ul li i {
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 .main-footer ul li a {
